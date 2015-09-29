@@ -23,6 +23,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     -->
     <link href="{{ asset ("/bower_components/admin-lte/dist/css/skins/skin-black.min.css") }}" rel="stylesheet" type="text/css" />
 
+    <!-- jQuery 2.1.4 -->
+    <script src="/bower_components/admin-lte/dist/jquery.min.js" type="text/javascript"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -72,8 +75,6 @@ desired effect
 
 <!-- REQUIRED JS SCRIPTS -->
 
-<!-- jQuery 2.1.4 -->
-<script src="/bower_components/admin-lte/dist/jquery.min.js" type="text/javascript"></script>
 <!-- Bootstrap 3.3.2 JS -->
 <script src="/bower_components/admin-lte/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- AdminLTE App -->

@@ -7,10 +7,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="{{\Flysal\Administrator\current_username()}}" />
+                <img src="/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="{{Flysap\Application\current_username()}}" />
             </div>
             <div class="pull-left info">
-                <p>{{\Flysal\Administrator\current_username()}}</p>
+                <p>{{\Flysap\Application\current_username()}}</p>
                 <!-- Status -->
                 <a href="#"><i class="fa fa-circle text-success"></i>{{trans('Online')}}</a>
             </div>
@@ -34,10 +34,10 @@
             <li class="header">HEADER</li>
             <!-- Optionally, you can add icons to the links -->
 
-            @foreach(Flysal\Administrator\get_menu_sections() as $section => $menus)
+            @foreach(Flysap\Application\get_menu_sections() as $section => $menus)
                 <li class="treeview">
                     <a href="#"><i class="fa fa-link"></i> <span>{{$section}}</span> <i class="fa fa-angle-left pull-right"></i></a>
-                    {!! Flysal\Administrator\render_menu_section($section, ['class' => 'treeview-menu']) !!}
+                    {!! Flysap\Application\render_menu_section($section, ['class' => 'treeview-menu']) !!}
                 </li>
             @endforeach
 
