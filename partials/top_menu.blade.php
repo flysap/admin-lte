@@ -18,7 +18,6 @@
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-
                 <!-- User Account Menu -->
                 <li class="dropdown user user-menu">
                     <!-- Menu Toggle Button -->
@@ -51,6 +50,13 @@
                         </li>
                     </ul>
                 </li>
+
+                <li class="messages-menu">
+                    <a href="{{route('admin.mail.index')}}">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </li>
+
                 <!-- Control Sidebar Toggle Button -->
                 <li>
                     <a href="{{route('settings')}}"><i class="fa fa-gears"></i></a>
