@@ -14,7 +14,7 @@
 
     <!-- Main content -->
     <section class="content">
-        {!! app('widget-manager')->render() !!}
+        {!! Widget::render() !!}
         <!-- Your Page Content Here -->
     </section><!-- /.content -->
 @endsection
