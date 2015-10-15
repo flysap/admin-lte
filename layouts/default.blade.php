@@ -21,10 +21,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
           page. However, you can choose any other skin. Make sure you
           apply the skin class to the body tag so the changes take effect.
     -->
+
     <link href="{{ asset ("/bower_components/admin-lte/dist/css/skins/skin-black.min.css") }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset ("/bower_components/admin-lte/dist/jquery-ui.min.css") }}" rel="stylesheet" type="text/css" />
 
     <!-- jQuery 2.1.4 -->
     <script src="/bower_components/admin-lte/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="/bower_components/admin-lte/dist/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
