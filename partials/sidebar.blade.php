@@ -7,7 +7,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="/bower_components/adminLte/dist/img/user2-160x160.jpg" class="img-circle" alt="{{Flysap\Application\current_username()}}" />
+                <img src="/bower_components/adminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="{{Flysap\Application\current_username()}}" />
             </div>
             <div class="pull-left info">
                 <p>{{Flysap\Application\current_username()}}</p>
