@@ -89,4 +89,60 @@ desired effect
       user experience. Slimscroll is required when using the
       fixed layout. -->
 </body>
+
+<script type="text/javascript">
+    $(function() {
+        if( is_collapsed() )
+            $('body').addClass('sidebar-collapse');
+        else
+            $('body').removeClass('sidebar-collapse');
+
+    });
+
+    /**
+     * Switch collapsed panel .
+     *
+     * @param tag
+     */
+    function switchCollapsed() {
+        if( $('body').hasClass('sidebar-collapse') ) {
+            localStorage.removeItem('is_collapsed');
+        } else {
+            localStorage.setItem('is_collapsed', 'true');
+        }
+
+        return false;
+    }
+
+    /**
+     * Check if panel is collapsed .
+     *
+     * @returns {boolean}
+     */
+    function is_collapsed() {
+        if( supports_html5_storage() ) {
+            if( localStorage['is_collapsed'] ) {
+                return true;
+            }
+
+            return false;
+        }
+
+        return false;
+    }
+
+    /**
+     * Check if browser support html storage .
+     *
+     * @returns {boolean}
+     */
+    function supports_html5_storage() {
+        try {
+            return 'localStorage' in window && window['localStorage'] !== null;
+        } catch (e) {
+            return false;
+        }
+    }
+</script>
+
 </html>
