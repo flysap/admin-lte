@@ -10,6 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.4 -->
+    <link href="{{ asset ("/bower_components/jquery-ui/themes/base/jquery-ui.min.css") }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset ("/bower_components/adminLTE/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
     <link href="{{ asset ("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css") }}" rel="stylesheet" type="text/css" />
@@ -22,11 +23,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
           apply the skin class to the body tag so the changes take effect.
     -->
     <link href="{{ asset ("/bower_components/adminLTE/dist/css/skins/skin-black.min.css") }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset ("/css/style.css") }}" rel="stylesheet" type="text/css" />
 
 
     <script src="{{ asset ("/bower_components/jquery/dist/jquery.min.js") }}" type="text/javascript"></script>
     <script src="{{ asset ("/bower_components/jquery-ui/jquery-ui.min.js") }}" type="text/javascript"></script>
-    <link href="{{ asset ("/bower_components/jquery-ui/themes/base/jquery-ui.min.css") }}" rel="stylesheet" type="text/css" />
 
 
     <script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script>
