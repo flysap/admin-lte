@@ -109,3 +109,19 @@
 	vertical-align: top;
 	margin-right: 10px;
 }
+
+.bs-glyphicons{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.bs-glyphicons li{
+	list-style: none;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.input-file{
+
+}
